@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <title>Example</title>         
+   
+    
+    <link rel="stylesheet" type="text/css" href="./Content/appBase.css" />
+    <link rel="stylesheet" type="text/css" href="./Content/staticAccordion.css" />
+    <link rel="stylesheet" type="text/css" href="./Content/themes/ui-lightness/jquery-ui-1.8.21.custom.css" />
+    <link rel="stylesheet" type="text/css" href="./Content/themes/ui-lightness/jquery-ui-1.8.21.customOverride.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/Example.css" />
+
+
+    
+    <script src="http://credability-cdn.azurewebsites.net/js/CA/CA-1.0.0.js"></script>
+    <script src="http://credability-cdn.azurewebsites.net/js/CA/CA.Util.Events-1.0.0.js"></script>
+    <script src="http://credability-cdn.azurewebsites.net/js/CA/CA.Plugins-1.0.0.js"></script>
+
+    <style>
+        .intakeContentWrapper td {
+            border-bottom:solid 1px #ccc !important;
+        }
+    </style>
+</head>
+
+<body style="display: none; overflow-x: hidden !important;overflow-y: hidden !important;" class="white">
+   
+    <div class="advisorWrapper">
+        <div class="mainTop"><!--mainTop starts here-->
+            
+        </div>
+        <!--mainTop ends here-->
+        <div class="mainMid">
+            <!--mainMid starts here-->
+
+            <div class="bodyContainer"data-bind="template: {name:'plugin',data: $root}"><!--body container start-->
+     
+            </div><!--body container end-->
+                        
+        </div><!--mainMid end-->
+        <div class="clear"></div>
+    </div><!--Advisor end-->
+        
+    
+    
+    <script type="text/javascript" src="http://credability-cdn.azurewebsites.net/js/require/require-2.1.2.js"></script>
+
+    <script type="text/javascript">
+
+        CDNpath = 'http://credability-cdn.azurewebsites.net/js';
+
+        require.config({
+            baseUrl: "./Scripts",
+            waitSeconds: 0
+        });
+    </script>
+    
+    <script type="text/javascript">        
+
+        require([
+            "Example.Main-1"
+            ], function (main) {
+            main();
+        });
+
+    </script>
+
+</body>
+</html>

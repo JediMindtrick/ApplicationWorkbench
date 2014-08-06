@@ -1,0 +1,671 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+html {height:100%}
+
+body{font-family:Arial, Helvetica, sans-serif; background:url(./images/body_bg.png) no-repeat 0 0;height:100%;
+     margin:0 auto; width: 100%; color:#005192;}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6{padding:0; margin:0;}
+h1{padding: 0;margin: 0;font-size: 1.5em;}
+h2{font-size:18px; color:#005192;}
+h3{font-size:14px;}
+p{padding:0; margin:0; font-size:.9em;}
+
+#divStatus{ display: none;}
+
+fieldset {
+border:none;
+}
+.clear{clear:both}
+.left{
+	float:left;
+	/*height:30px;
+	width:50%;
+	margin:20px 0 0 25px;*/
+}
+.right{
+	float:right;
+	/*margin:10px 42px 0 0;*/
+}
+
+.white{ background: #fff;}
+
+iframe::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+iframe::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3) !important;
+    background: #eaeaea !important;
+}
+ 
+iframe::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5) !important; 
+    background: #cccccc !important;
+}
+
+iframe {
+    border: solid 1px #dedede !important;
+}
+
+iframe body {
+    max-height: 850px !important;
+}
+
+/*Form Elements*/
+
+input{
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #CCCCCC;
+	padding:2px;
+    margin:0;
+    text-align: right;
+}
+
+input[disabled=true]   {
+        color:#bfbfbf;
+        text-shadow: #ffffff -1px 1px;
+    }
+
+    input[type="checkbox"] {
+        float: left;
+        margin: 3px 5px;
+    }
+
+
+input[type='checkbox'] p
+{
+    font-size:11px;
+}
+
+input.radio
+{
+    float:left;
+    width:auto;
+    margin-right:5px;
+}
+
+input.radio p
+{
+    font-size:11px;
+}
+
+
+label{
+	float:left;
+	clear:both;
+	margin:7px;
+    color: #333333;
+    font-size: 1em;
+    font-weight: bold;
+    max-width:485px
+}
+
+select {
+    float: right;
+    margin: 5px 0 0 5px;
+    width: 352px;
+    padding:2px;
+}
+
+        /*Validation*/
+
+        .alertSymbol{
+	        width:5px;
+	        height:21px;
+	        background:#ec9a8a;
+	        border:solid 1px #ce8c7f;
+	        float:right;
+	        margin:5px 0 0;
+        }
+
+
+
+        .alertBox{
+	        width:99%;
+	        height:auto;
+	        margin:5px auto;
+	        background:#ec9a8a;
+	        border:solid 1px #ce8c7f;
+        }
+
+        .alertBox p{
+	        padding:4px 4px 4px 10px;
+	        font-size:1.2em;
+	        color:#333;
+        }
+
+        .alertIcon{
+	        background:url(./images/alertIcon.png) scroll no-repeat 0 0;	
+	        height:15px;
+	        width:15px;
+        }
+
+
+
+
+/*layout********/
+
+.apWrapper{ margin: 0 auto;width: 1000px;}
+.head{
+	width:98%;
+	margin:0;
+	border: solid 1px #bababa;
+	background-image:url(./images/progressBar_bg.gif);
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.bodyContainer{
+	width:100%;
+	/*height:auto;*/
+    /*height: 100%;*/
+    /*height: 675px;*/
+    height: auto;
+	margin:0 auto; 
+}
+
+.main{
+	width:98%;
+	height:auto;
+    min-height: 200px; 
+	background:#ffffff;
+	margin:0px 0 0 0;
+	border-top:solid 10px #1b85c5;
+	border-left:solid 1px #d7d7d7;
+	border-right:solid 1px #d7d7d7;
+	border-bottom:solid 1px #d7d7d7;
+}
+
+iframe
+{
+    border:0px solid #transparent;
+}
+.mainTop{
+	width:100%;
+	padding:5px 0;
+	height:auto;
+    text-shadow:#fff 1px -1px;
+}
+
+    .mainTop h2 {
+        text-shadow:#fff -1px 1px;
+    }
+
+.mainMid{
+	clear:both;
+	height:auto;
+}
+
+.mainBottom{
+	width:98%;
+	height:auto;
+	margin:10px;
+}
+
+
+footer
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabWrapper
+{
+    position:relative;
+    top:5px;
+    height:auto;
+    clear:both;
+}
+
+.colContainer{
+	height:auto;
+	width:97%;	
+	padding:5px 5px 15px 5px;
+	clear:both;
+	margin:0 auto;
+}
+
+.col1{
+	height:auto;
+	width:100%;
+	margin:5px;	
+	padding:3px 10px;
+	
+}
+
+.col2{
+	height: auto;
+width: 47%;
+float: left;
+margin: 5px;
+padding: 3px 5px;
+	
+}
+
+.col3{
+	height:auto;
+	width:28%;
+	float:left;
+	margin:5px;
+	padding:3px 10px;
+	
+}
+
+.col4{
+	height:auto;
+	width:23%;
+	float:left;
+	margin:5px;
+	padding:3px 5px;
+	
+}
+
+
+
+/*misc*/
+
+.tdFIX {
+width:1px;
+}
+
+.lookUp{
+	background:url(./images/lookupbutton.png) no-repeat;
+	height:20px;
+	width:21px;
+}
+
+.small{
+	color:#333333;
+	font-size:13px;
+	font-weight:bold;	
+}
+
+
+.Remove {
+    border: 1px solid #CCC;
+    padding: 3px 3px 0;
+    position: relative;
+    top: 2px;
+}
+
+.Remove:hover {
+    border: 1px solid #b6080b;
+}
+
+    .Remove img
+    {
+        border:none;
+    }
+
+
+.hasFocus {
+    background-color: #C5FCFC
+}
+
+
+
+.session {
+    height: 802px;
+}
+
+.finalizedTask {
+    color:#4B8500;
+}
+
+
+
+
+
+
+/*Look & Feel***********************************************************************************************/
+
+/*Progress Bar*/
+
+#navigationContainer
+{
+    background: url("./images/ui-bg_glass_100_up_1x400.png") repeat-x scroll 50% 50% #EAEAEA;
+    border: 1px solid #cccccc;
+    border-radius: 4px 4px 4px 4px;
+    height: 45px;
+    width: auto;
+}
+
+#progressBarContainer{
+	width:98%;
+	height:30px;
+	margin:15px auto;
+	background-image: url(./images/whtGloss_bg.gif);
+	border:solid 1px #005192;
+}
+
+#progressBarContainer li {
+	margin:0;
+	padding:0;
+	display:inline;
+	list-style-type:none;
+}
+
+#progressBarContainer li a {
+	text-decoration:none;
+}
+
+
+#progressBarContainer ul{width:100%; list-style:none; clear:both; float:left; margin:0; padding:0;}
+#progressBarContainer ul a {text-decoration:none; color:#1b85c5;}
+/*when adding new items to progress bar, this is where you change the width*/
+#progressBarContainer ul li {
+    float:left; 
+    width:16.546%; 
+    text-align:left; 
+    border-left: 1px solid #003663;
+}
+    #progressBarContainer ul li:hover {
+        background: url(./images/progressBar.gif) repeat-x scroll 0 50% transparent;
+    }
+    #progressBarContainer ul li a:hover {
+        color:#f2f2f2 !important;
+        text-shadow: #003663 -1px 1px !important;
+}
+#progressBarContainer ul li span {display:block; margin:auto; margin-right:50%; text-align:center; width:19px; height:19px; line-height:19px; background-color:#ffffff;} 
+#progressBarContainer ul li span a {display:block; width:19px; height:19px; margin:0px;}
+#progressBarContainer ul li span a.active, ul li.active span a, ul li.past span a:hover, ul li.past:hover span a {background-color:#990000; color:#ffffff; }
+#progressBarContainer ul li.active a{color:#fff;}
+#progressBarContainer ul li a {display:block; margin-right:5%; text-align:center; font-size:1em; font-weight:bold; padding: 6px 5px 5px;}
+#progressBarContainer ul li.complete a {color:#eaeaea;}
+#progressBarContainer ul li.active a:hover, ul li.past a:hover, ul li.past a, ul li.active a {color:#FFFFFF; /*background:url(./images/progressArrow.png) no-repeat scroll 90% 8px;*/ text-decoration:none;}
+#progressBarContainer ul li.active span a:hover {color:#ffffff;}
+#progressBarContainer ul li.complete:hover {cursor:pointer;}
+#progressBarContainer ul li.complete  {border-right:1px solid #003663; background: url(./images/progressBarComplete.gif) repeat-x scroll 0 50% transparent; text-shadow: #003663 -1px 1px 0; color:#ffffff;}
+
+#progressBarContainer ul li.active  {background-position:right -48px; border-right:1px solid #003663; background: url("./images/progressBar.gif") repeat-x scroll 0 50% #1b84c5; text-shadow: #003663 -1px 1px 0; color:#ffffff;}
+
+/*Tables*/
+
+table
+{
+    border:none;
+    border-top:solid 1px #ccc;
+    font-size:.9em;
+    padding:3px;
+    background:#fefefe;
+    /*opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+    border-spacing:0;
+    border-collapse:collapse;
+    width:100%;
+    margin: 10px 0;
+    border-bottom: solid 1px #CCC;
+}
+
+th
+{
+    border-bottom: solid 1px #003C6D;
+border-top: solid 1px #003C6D;
+border-right: solid 1px #003C6D;
+border-left: solid 1px #003C6D;
+font-size: .9em;
+background: url("./images/progressBar.gif") repeat-x scroll 0 50% #1b84c5;
+font-weight: bold;
+padding: 5px;
+color: #FEFEFE;
+text-transform: uppercase;     
+}
+
+tr
+{
+    border-bottom:none;
+    border-top:none;
+    border-left:none;
+    border-right:solid 1px #ccc;
+    padding:3px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:  #eee; /* light */
+}
+tr:nth-child(even) {
+ /* background-color:  #ffffff;  lighter */
+ background-color:  #fcfcfc;
+}
+
+/*
+th{padding:3px 3px 3px 5px}
+    */
+td
+{
+    padding:10px;
+    border:solid 1px #ccc;
+    border-bottom:none; /*important property for selected td*/
+}
+
+
+table tr.selected  {
+    background-color: #d2dfa6;
+    border:solid 1px #B6D05E !important;
+}
+table tr.selected td {
+            background-color: #d2dfa6;
+border-right: solid 1px #B6D05E;
+border-bottom: solid 1px #B6D05E;
+border-left: solid 1px #B6D05E;
+border-top: solid 1px #B6D05E;
+        }
+
+table tr.selected  input {
+            border:solid 1px #f2f2f2 !important;
+        }
+/*Buttons*/
+
+.buttonWrapper
+{
+float: right;
+margin: 0 10px 0 0;
+max-width: 700px;
+min-width:40px;
+clear: both;
+}
+
+
+button
+{
+    background: url("./images/ui-bg_glass_100_up_1x400.png") repeat-x scroll 50% 50% #EAEAEA;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    border: solid 1px #cccccc;
+    cursor: pointer;
+    padding: 8px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #4B8500 !important;
+    float: left;
+    margin: 5px;
+    font-weight: bold;
+    text-shadow: white -1px 1px;
+}
+
+button:hover
+{
+    background: url("./images/ui-bg_glass_100_over_1x400.png") repeat-x scroll 50% 50% #f2f2f2;
+    border: solid 1px #b0b0b0;
+    color: #005192 !important;
+}
+
+
+
+
+/*iframe plugin styles*/
+
+#GoalManagementPlugin body {background: #EAEAEA !important;}
+
+
+/*******************temporary placeholder for plugin css*/
+.advisorWrapper {
+    margin: 15px 10px;
+}
+
+#Stage2Container {
+    border: solid 1px #ccc;
+    width: 99%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/*summaryFunctinos do not appear to be in use*/
+.summaryFunctions {
+    background: none repeat scroll 0 0 #EAEAEA;
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.summaryFunctions ul {
+    float: right;
+    list-style: none outside none;
+    margin: 5px;
+}
+
+.summaryFunctions li
+{
+    float:left;
+    padding:0 5px 0 3px;
+}
+
+.summaryFunctions img
+{
+    padding:0 3px 0 3px;
+}
+
+.summaryFunctions li a:link, .summaryFunctions li a:visited
+{
+    color:#404040;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.summaryFunctions li a:hover
+{
+    color:#777777;
+}
+
+/*CSR text*/
+.CSRtext {
+    font-size:20px; 
+    color:#4b8500; 
+    font-weight:bold; 
+    font:Arial, Helvetica, sans-serif;
+}
+
+.accordionContent{
+	padding: 5px 0;	
+}
+
+#language {
+    background:url("./images/whtGloss_bg.gif") repeat scroll  0 #F3F3F3;
+    border: 1px solid #C4C4C4;
+    margin: 10px 5px 0 0;
+    padding: 3px;
+    width: 200px;
+	color:#005192;
+	
+}
+
+.CSRhighlight{
+	background: none repeat scroll 0 0 #cee5b2;
+    border: 1px solid #b2d18b;
+	margin:5px 0 0 5px;
+	padding:2px;
+}
+
+/*Stage2Container*/
+
+
+#Stage2Container ul li a
+{
+    font-size:.9em;
+}
+
+#Stage2Container tr
+{
+    font-size:.7em;
+    color:#676767;
+}
+
+/*summary css below*/
+
+.sessionInfo {
+width: auto;
+float: left;
+height: auto;
+margin: 40px 0 0;
+padding: 0 0 0 15px;
+}
+
+.sessionInfo td.sessionLabel
+{
+    text-align:left;
+    color:#005192;
+}
+
+.sessionInfo td.sessionInfoDynamic
+{
+    text-align:right;
+    color:#404040;
+}
+
+/*Advisor Global styles*/
+
+#ui-datepicker-div {
+    display: none;
+}
+
+.disabledClass {
+    background-color:#ccc;
+}
+
+.straightButton {
+    margin-right:2px; 
+    margin-top:3px!important; 
+    float: right; 
+    height: 35px; 
+    margin-left: 2px; 
+    width:155px;
+}
+
+.NotesTextArea {
+    min-height: 90px !important;
+    margin-top: 10px;
+}
+
+
+/*Dialogs & Modals*/
+
+
+#CancelButton, .ButtonCancel{
+    color:#B80005 !important;
+    float:left !important;
+    margin:7px 0 0 10px !important;
+}
+
+#CancelButton:hover, .ButtonCancel:hover{
+    color:#980004 !important;
+}
+
+#btnRemoveLiability, #btnRemoveAsset, #btnRemoveRow {
+    color:#B80005 !important;
+}
+
+#btnRemoveLiability:hover, #btnRemoveAsset:hover, #btnRemoveRow:hover {
+    color:#980004 !important;
+}

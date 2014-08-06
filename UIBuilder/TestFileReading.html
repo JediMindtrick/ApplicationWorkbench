@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <title>Test File Reader</title>
+
+    <script type="text/javascript" src="./Scripts/Lib/require-2.1.2.js"></script>
+
+</head>
+
+<body>
+
+<input type="checkbox" checked="checked" />
+<!--
+so the process would be this...
+1. create wireframe image on the server (we need a special requirements doc output folder) *OPTIONAL, ALTERNATIVELY FOR NOW WE MAY JUST LOAD THE STRAIGHT BMML SOURCE
+2. create markdown doc fragment for each wireframe which includes a reference to the wireframe image *WE MAY JUST USE STRAIGHT HTML
+3. clone html table
+3. alter the checkboxes to add "checked" attributes to html checkboxes via $('input:checked');
+4. alter inputs to make them into spans containing the text
+5. append the html table to the markdown fragment *OR HTML
+6. save on the server
+7. run pandoc on the server to produce pdf http://johnmacfarlane.net/pandoc/README.html *OPTIONAL, OR WE MAY JUST UPLOAD THE HTML TO THE DOCUMENTATION SERVER AND PROVIDE A LINK
+8. save pdf and return it to the user *SEE #7
+-->
+<div style="height:500px; width:500px; border: solid thin black;" id="drop-area">Drag and drop files here</div>
+
+<h2>HTML Table Example:</h2>
+<table border="1" cellpadding="3">
+    <tbody><tr>
+        <th>First Name</th>
+        <th>Last Name</th>      
+        <th>Points</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>      
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>        
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>        
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Adam</td>
+        <td>Johnson</td>        
+        <td>67</td>
+    </tr>
+</tbody></table>
+
+
+<ul id="file-list"></ul>
+
+    <script type="text/javascript">
+        CDNpath = 'http://credability-cdn.azurewebsites.net/js';
+
+        require.config({
+            baseUrl: "./Scripts",
+            waitSeconds: 0
+        });
+    </script>
+
+
+    <script type="text/javascript">      
+
+        require([
+            'Lib/jquery'
+        ], function ($) {
+            $(function(){
+                console.log('loaded');
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">      
+(function () {
+    var filesUpload = document.getElementById("files-upload"),
+        dropArea = document.getElementById("drop-area"),
+        fileList = document.getElementById("file-list");
+    
+    function traverseFiles (files) {
+        var li,
+            file,
+            fileInfo;
+        fileList.innerHTML = "";
+            
+        for (var i=0, il=files.length; i<il; i++) {
+            file = files[i];
+            console.log(file.name);
+            console.log(file.size);
+            console.log(file.type);
+
+            var _reader = new FileReader();
+
+            _reader.onload = function(data){
+                console.log(data.currentTarget.result);
+            };
+
+            _reader.readAsText(file);
+        };
+    };
+
+    dropArea.ondragenter = function () {
+        return false;
+    };
+    
+    dropArea.ondragover = function () {
+        return false;
+    };
+    
+    dropArea.ondrop = function (evt) {
+        traverseFiles(evt.dataTransfer.files);
+        return false;
+    };
+    
+})();
+
+    </script>
+
+</body>
+</html>

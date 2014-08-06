@@ -1,0 +1,15 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="194" measuredH="27" mockupW="194" mockupH="27">
+  <controls>
+    <control controlID="52" controlTypeID="__group__" x="0" y="0" w="194" h="27" measuredW="1280" measuredH="640" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="194" h="-1" measuredW="76" measuredH="27" zOrder="0" locked="false" isInGroup="52">
+          <controlProperties>
+            <customData>value%253A%2520TotalScore</customData>
+            <customID>TotalScore</customID>
+            <text>TotalScore</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

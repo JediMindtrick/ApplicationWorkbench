@@ -1,0 +1,38 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="754" measuredH="564" mockupW="349" mockupH="491">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="405" y="73" w="349" h="491" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <customData/>
+        <customID>Column1</customID>
+      </controlProperties>
+    </control>
+
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="444" y="185" w="-1" h="-1" measuredW="96" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Mortgage/Rent%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="444" y="221" w="-1" h="-1" measuredW="100" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <customData>value%253A%2520MortgRentExps</customData>
+        <customID>MortgRentExps</customID>
+        <text>MortgRentExps</text>
+      </controlProperties>
+    </control>
+
+
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="444" y="94" w="-1" h="-1" measuredW="83" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Credit%20Cards%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::TextInput" x="444" y="137" w="-1" h="-1" measuredW="88" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <customData>value%253A%2520CCDebtBudg</customData>
+        <customID>CCDebtBudg</customID>
+        <text>CCDebtBudg</text>
+      </controlProperties>
+    </control>
+
+  </controls>
+</mockup>

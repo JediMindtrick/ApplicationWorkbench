@@ -1,0 +1,22 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1259" measuredH="577" mockupW="1252" mockupH="553">
+  <controls>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Component" x="7" y="24" w="306" h="553" measuredW="306" measuredH="553" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/symbols.bmml#Column Of 2</src>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Component" x="334" y="24" w="306" h="553" measuredW="306" measuredH="553" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="27" w="306" h="526"/>
+        <override controlID="1" x="101" y="0" w="81" h="27"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#Column%20Of%203</src>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Component" x="647" y="24" w="612" h="553" measuredW="612" measuredH="553" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/symbols.bmml#Plugin Container</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

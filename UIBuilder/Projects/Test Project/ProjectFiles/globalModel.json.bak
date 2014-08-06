@@ -1,0 +1,246 @@
+{
+    "My Example Plugin": {
+        "ui": {
+            "html": "<div id=\"\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"CCDebtBudg\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"NetInc\"></div>"
+        },
+        "nodes": [
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Plugin Container",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 1,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 384,
+                            "y": 9
+                        },
+                        "ur": {
+                            "x": 724,
+                            "y": 9
+                        },
+                        "bl": {
+                            "x": 384,
+                            "y": 252
+                        },
+                        "br": {
+                            "x": 724,
+                            "y": 252
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 1,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "CCDebtBudg"
+                },
+                "globalID": 2,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 54
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 54
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 138
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 138
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 2,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for CCDebtBudg",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                            "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                            "ID": 2
+                        },
+                        {
+                            "text": "CCDebtBudg should be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                            "ID": 2
+                        },
+                        {
+                            "text": "CCDebtBudg should not be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                            "ID": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "NetInc"
+                },
+                "globalID": 3,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 153
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 153
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 237
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 237
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 3,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for NetInc",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                            "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                            "ID": 3
+                        },
+                        {
+                            "text": "NetInc should be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                            "targetRegex": "NetInc should be '(\\S+)'",
+                            "ID": 3
+                        },
+                        {
+                            "text": "NetInc should not be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                            "targetRegex": "NetInc should not be '(\\S+)'",
+                            "ID": 3
+                        }
+                    ]
+                }
+            }
+        ],
+        "test": {
+            "sentences": [
+                {
+                    "text": "I enter a value of param1 for CCDebtBudg",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                    "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                    "ID": 2
+                },
+                {
+                    "text": "CCDebtBudg should be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                    "ID": 2
+                },
+                {
+                    "text": "CCDebtBudg should not be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                    "ID": 2
+                },
+                {
+                    "text": "I enter a value of param1 for NetInc",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                    "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                    "ID": 3
+                },
+                {
+                    "text": "NetInc should be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                    "targetRegex": "NetInc should be '(\\S+)'",
+                    "ID": 3
+                },
+                {
+                    "text": "NetInc should not be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                    "targetRegex": "NetInc should not be '(\\S+)'",
+                    "ID": 3
+                }
+            ],
+            "code": "Given I enter a value of \"500\" for CCDebtBudg\nThen NetInc should be \"250\"\nAnd foo should be \"bar\"",
+            "validatedSentences": [
+                {
+                    "sentence": "Given I enter a value of \"500\" for CCDebtBudg",
+                    "support": "supported",
+                    "matched": {
+                        "text": "I enter a value of param1 for CCDebtBudg",
+                        "selector": "#CCDebtBudg",
+                        "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                        "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                        "ID": 2
+                    }
+                },
+                {
+                    "sentence": "Then NetInc should be \"250\"",
+                    "support": "supported",
+                    "matched": {
+                        "text": "NetInc should be param1",
+                        "selector": "#NetInc",
+                        "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                        "targetRegex": "NetInc should be '(\\S+)'",
+                        "ID": 3
+                    }
+                },
+                {
+                    "sentence": "And foo should be \"bar\"",
+                    "support": "unsupported",
+                    "matched": ""
+                }
+            ],
+            "validatedTest": "#This is generated test code\nGiven I enter a value of \"500\" for CCDebtBudg #supported\nThen NetInc should be \"250\" #supported\nAnd foo should be \"bar\" #unsupported",
+            "generatedSupport": "//Generated Class\n[Binding]\npublic class AutoGeneratedTestSupport {\n\t\t[Given(@\"I enter a value of '(\\S+)' for CCDebtBudg\")]\n\t[When(@\"I enter a value of '(\\S+)' for CCDebtBudg\")]\n\t[Then(@\"I enter a value of '(\\S+)' for CCDebtBudg\")]\n\t[And(@\"I enter a value of '(\\S+)' for CCDebtBudg\")]\n\tpublic void helper0(param1){\n\t\t//Given I enter a value of \"500\" for CCDebtBudg\n\t}\n\n\t\t[Given(@\"NetInc should be '(\\S+)'\")]\n\t[When(@\"NetInc should be '(\\S+)'\")]\n\t[Then(@\"NetInc should be '(\\S+)'\")]\n\t[And(@\"NetInc should be '(\\S+)'\")]\n\tpublic void helper1(param1){\n\t\t//Then NetInc should be \"250\"\n\t}\n\n\t\t//Unsupported step\n\t//And foo should be \"bar\"\n\n\t\n}"
+        },
+        "source": {
+            "balsamiq": "<mockup version=\"1.0\" skin=\"sketch\" fontFace=\"Balsamiq Sans\" measuredW=\"724\" measuredH=\"252\" mockupW=\"340\" mockupH=\"243\">\n  <controls>\n    <control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n  </controls>\n</mockup>",
+            "balsamiqName": "My Example Plugin",
+            "test": "Given I enter a value of \"500\" for CCDebtBudg\nThen NetInc should be \"250\"\nAnd foo should be \"bar\""
+        }
+    },
+    "currentModule": "My Example Plugin"
+}

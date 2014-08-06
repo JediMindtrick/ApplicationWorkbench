@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <title>Project Awesome</title>
+
+    <link rel="stylesheet" type="text/css" href="./CSS/ScrollableTable.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Editor.css" />
+    <link href="jquery-ui-1.10.3.custom/css/jquery-ui-custom.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./Scripts/Lib/codemirror/codemirror.js"></script>
+    <script type="text/javascript" src="./Scripts/Lib/codemirror/javascript.js"></script>
+    <script type="text/javascript" src="./Scripts/Lib/codemirror/xml.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/codemirror.css"/>
+
+    <!--see https://github.com/austincheney/Pretty-Diff-->
+    <script type="text/javascript" src="./Scripts/Lib/markupmin.js"></script>
+    <script type="text/javascript" src="./Scripts/Lib/markup_beauty.js"></script>
+
+    <script type="text/javascript" src="./Scripts/Lib/require-2.1.2.js"></script>
+
+</head>
+
+<body id="dropArea" style="display: none;">
+
+    <div style="width:90%;height:30px;">
+
+        <div style="float:left;margin-top:2px;">
+            <select style="height:36px;color:#0073EA;" data-bind="options: moduleList, value: currentModule"></select>
+        </div>
+
+        <button data-bind="click: loadTestIntoModel" id="btnTest" style="float:left;">Generate Test</button>        
+        <button data-bind="click: publish" style="float:left;">Publish</button>
+        <button data-bind="click: showHelp" style="float:left;">Help</button>
+    </div>
+    <br>
+
+    <div data-bind="click: showWireframe" style="cursor:move;margin-top:0px;float:left;width:30px;">
+        <img src="/Content/images/icn-dropdown.png">
+    </div>
+    <br>
+
+    <div data-bind="visible: viewWireframe" style="width:100%; height:250px; border: solid thin black;margin-top:15px;">
+
+        <div style="width:30%; margin-top:5px;">
+            <label style="margin-top:10px;float:left;" >Name:</label>
+            <input style="margin-top:10px;" type="text" data-bind="value: balsamiqName" />
+
+
+            <button data-bind="click: loadBalsamiqIntoModel" style="float:right;">Update</button>
+        </div>
+
+        <br><br>
+        <label>Balsamiq Wireframe:</label>
+        <br>
+        <textarea style="width:98%; height:70%;"  data-bind="value: balsamiqCode" ></textarea> 
+    </div>
+
+<div style="margin-top:15px;" id="tabs">
+    <ul>
+    <li><a href="#define">Define</a></li>
+    <li><a href="#describe">Describe</a></li>
+    <li><a href="#model">Write</a></li>
+    <li><a href="#ui">UI Out</a></li>
+    <li><a href="#test">Test Out</a></li>
+    </ul>
+
+    <div id="define">
+        <div>
+            <img style="margin-left: auto; margin-right:auto;" src="./Content/images/CDI Management.png"></img>
+        </div>
+    </div>
+
+    <div id="describe">
+
+        <button data-bind="click: newUseCase">New</button>
+        <a data-bind="attr: { href: documentLocation }" target="_blank">Document Location</a>
+
+        <table id="useCaseOuterTable" class="tableone" style="height:400px;margin-top:20px;">
+            <thead>
+                <tr>
+                    <th style="width:54px;">ID</th>
+                    <th style="width:698px;">Description</th>
+                    <th class="header_rotate" style="width:54px;">CSR</th>
+                    <th class="header_rotate" style="width:54px;">Counselor</th>
+                    <th class="header_rotate" style="width:54px;">Advisor</th>
+                    <th class="header_rotate" style="width:54px;">Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="6" style="padding-top:40px;">
+                    <div class="innerb">
+                        <table class="tabletwo">   
+                            <thead></thead>                   
+                            <tbody data-bind="foreach: useCases" >
+                                <tr style="height: 20px; border: solid thin black;" data-bind="attr: { id: 'Row_' + ID }">
+                                    <td style="width: 32px;" class="tdFIX" data-bind="text: ID" name="ID">
+                                    </td>
+                                    <td style="width: 436px; border-left: solid thin black;" class="tdFIX">
+                                        <textarea name="Description" style="width:98%;" data-bind="value: Description"></textarea>
+                                    </td>
+                                    <td style="width: 32px; border-left: solid thin black;" class="CSR">
+                                        <input name="CSR" type="checkbox" data-bind="checked: CSR" />
+                                    </td>
+                                    <td style="width: 41px; border-left: solid thin black;" class="tdFIX">
+                                        <input name="Counselor" type="checkbox" data-bind="checked: Counselor" />
+                                    </td>
+                                    <td style="width: 41px; border-left: solid thin black;" class="tdFIX">
+                                        <input name="Advisor" type="checkbox" data-bind="checked: Advisor" />
+                                    </td>
+                                    <td style="width: 41px; border-left: solid thin black;" class="tdFIX">
+                                        <input name="Manager" type="checkbox" data-bind="checked: Manager" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td></tr>
+            </tbody>
+        </table>
+<!--        </div>-->
+    </div>
+    <!--end "describe-->
+
+    <div id="model">
+
+        <div style="width: 100%; float: left;">
+            <h1>Write tests here:</h1>
+            <div class="wrapCodeMirror">
+                <textarea style="height:auto;" data-bind="value: scenario, codemirror: { 'lineNumbers': true, 'matchBrackets': true, 'mode': 'text/javascript', 'viewportMargin': Infinity }" id="testCode"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="ui">
+        <div style="width: 100%; float: left;">
+                <textarea style="height: 600px;" data-bind="value: htmlGen" id="htmlOut"></textarea>
+        </div>
+    </div>
+
+
+    <div id="test">
+
+        <div style="width: 45%; float: left;">
+            
+            <div class="wrapCodeMirror">
+                
+                <textarea style="height:200px; width:98%;" data-bind="value: scenarioValidation" id="testValidation"></textarea>
+            </div>
+        </div>
+
+        <div style="width: 45%; float: left;">
+            
+            <div class="wrapCodeMirror">
+                <textarea style="height:200px; width:98%;" data-bind="value: testSupportGen" id="testValidation"></textarea>                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div data-bind="dialog: { isOpen: displayHelp, width: '621px', title: 'Help' }">
+    <div style="width:100%; height:456px;">
+        <h3 style="text-decoration:underline;">Testing</h3>
+        <h4>General:</h4>
+        <ul>
+            <li>Test sentences are only supported for custom controls.</li>
+            <li>Test sentences are case insensitive.</li>
+            <li>[CDI] = "Corporate Data Id"</li>
+        </ul>
+        <h4>These are supported test sentences: </h4>
+        <ul>
+            <li>Sentences must begin with one of the following "Given", "When", "Then", "And", "But", "Or"</li>
+            <li>I enter a value of "[param1]" for [CDI]</li>
+            <li>[CDI] should be "[param1]"</li>
+            <li>[CDI] should not be "[param1]"</li>
+        </ul>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        CDNpath = 'http://credability-cdn.azurewebsites.net/js';
+
+        require.config({
+            baseUrl: "./Scripts",
+            waitSeconds: 0
+        });
+    </script>
+
+    <script type="text/javascript">      
+
+        require([
+            'Lib/jquery',
+            'Controls/Controls.Library',
+            'Transforms/Transform.Library',
+            'Editor.ViewModel-1',
+            'Lib/knockout',
+            'Lib/jquery-ui-custom.min',
+            'Tester/Editor.Extensions.Tester',
+            'Editor.ProjectMgmt',
+            'Editor.FileUpload',
+            'Editor.UseCases'
+        ], function ($,controlLib,transformLib,ViewModel,ko) {
+            $(function(){
+
+                $('#tabs').tabs({disabled: true});
+                $('#tabs').tabs('enable',0);
+                $('button').button();
+
+                console.log('Loaded Controls:')
+                for(var control in controlLib.controls){
+                    if(controlLib.controls.hasOwnProperty(control)){
+                        console.log('Loaded "' + control + '".');
+                    }
+                }
+
+                console.log('Loaded Transforms will run in the following order:')
+                for(var i = 0, l = transformLib.length; i < l; i++){
+                    console.log((i + 1) + ' "' + transformLib[i].name + '".');
+                }
+
+                var vm = new ViewModel();              
+
+                $('body').show();
+
+            });
+        });
+
+    </script>
+</body>
+</html>

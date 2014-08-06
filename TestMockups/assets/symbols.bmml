@@ -1,0 +1,98 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1317" measuredH="732" mockupW="1272" mockupH="652">
+  <controls>
+    <control controlID="0" controlTypeID="__group__" x="45" y="179" w="306" h="553" measuredW="306" measuredH="553" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Column%20Of%202</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="27" w="306" h="526" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="101" y="0" w="-1" h="-1" measuredW="82" measuredH="27" zOrder="1" locked="false" isInGroup="0">
+          <controlProperties>
+            <state>disabled</state>
+            <text>ColumnOf2</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="1" controlTypeID="__group__" x="378" y="179" w="306" h="553" measuredW="306" measuredH="553" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Column%20Of%203</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="27" w="306" h="526" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="1"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="101" y="0" w="-1" h="-1" measuredW="81" measuredH="27" zOrder="1" locked="false" isInGroup="1">
+          <controlProperties>
+            <state>disabled</state>
+            <text>ColumnOf3</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="2" controlTypeID="__group__" x="705" y="179" w="612" h="553" measuredW="612" measuredH="553" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Plugin%20Container</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="27" w="612" h="526" measuredW="612" measuredH="526" zOrder="0" locked="false" isInGroup="2">
+          <controlProperties>
+            <controlName>Plugin%20Container</controlName>
+          </controlProperties>
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="612" h="526" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="252" y="0" w="-1" h="-1" measuredW="108" measuredH="27" zOrder="1" locked="false" isInGroup="2">
+          <controlProperties>
+            <text>PluginContainer</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="3" controlTypeID="__group__" x="60" y="80" w="196" h="84" measuredW="196" measuredH="84" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Text%20Input%20Set</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="196" h="84" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="3"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="86" y="15" w="102" h="-1" measuredW="75" measuredH="27" zOrder="1" locked="false" isInGroup="3">
+          <controlProperties>
+            <text>Text%20Input</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="15" y="18" w="-1" h="-1" measuredW="35" measuredH="21" zOrder="2" locked="false" isInGroup="3">
+          <controlProperties>
+            <text>Label%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="15" y="57" w="-1" h="-1" measuredW="153" measuredH="21" zOrder="3" locked="false" isInGroup="3">
+          <controlProperties>
+            <text>*Validation%20Error%20Message</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="4" controlTypeID="__group__" x="298" y="80" w="196" h="84" measuredW="196" measuredH="84" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Date%20Input%20Set</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="196" h="84" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="4"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="15" y="18" w="-1" h="-1" measuredW="35" measuredH="21" zOrder="1" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>Label%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="15" y="57" w="-1" h="-1" measuredW="153" measuredH="21" zOrder="2" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>*Validation%20Error%20Message</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::DateChooser" x="93" y="14" w="-1" h="-1" measuredW="90" measuredH="25" zOrder="3" locked="false" isInGroup="4">
+          <controlProperties>
+            <text>%20%20/%20%20/%20%20%20%20</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

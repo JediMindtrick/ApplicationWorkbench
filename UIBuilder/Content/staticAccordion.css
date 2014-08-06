@@ -1,0 +1,105 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body
+{
+    margin:0!important;
+}
+h3{margin:0;}
+
+.collapsibleDiv{
+	width:100%;
+}
+
+.collapsibleDivHead{
+	width:100%;
+	padding:0;
+}
+
+.collapsibleDivHead a{
+	padding: 5px 0 0 1.3em;
+}
+
+.collapsibleDivHead h3{
+	width:100%;
+	display:block;
+	position:relative;
+}
+
+
+.collapsibleDivHead h3 a {
+    background: url("./images/ui-bg_glass_100_up_1x400.png") repeat-x scroll 50% 50% #EAEAEA;
+    color: #1B85C5;
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    padding: 10px 0 5px 20px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: -1px 1px 0 #FFFFFF;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    border:solid 1px #bababa;
+}
+
+.collapsibleDivContent h3 a:hover{
+	background: url("./images/ui-bg_glass_100_over_1x400.png") repeat-x scroll 50% 50% #eaeaea;
+	color: #005192;
+}
+
+.collapsibleDivContent{
+	border:solid 1px #bababa;
+	border-radius:5px;
+	margin:0 0 10px 0;
+	height:auto;
+	clear:both;
+    padding:0 0 15px 0;
+}
+
+.collapsibleDivBody{
+	padding:8px;
+	clear:both;
+	overflow:auto;
+	height:auto;	
+}
+
+.goals {
+    color: #343434;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.goals td{
+    padding:4px;
+}
+
+.goalsTextArea
+{
+    margin: 2px;
+    width: 100%;
+    height: 90px;
+    overflow-y: scroll;
+    border: solid 2px #CCC;
+}
+
+.arrow-active {
+    background: url("./images/icnArrowDown.png") no-repeat scroll 50% 50% transparent;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -99999px;
+    top: 25%;
+    width: 16px;
+}
+
+.arrow-inactive {
+    background: url("./images/icnArrowRight.png") no-repeat scroll 50% 50% transparent;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -99999px;
+    top: 25%;
+    width: 16px;
+}

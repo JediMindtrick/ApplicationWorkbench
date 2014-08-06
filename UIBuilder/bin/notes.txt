@@ -1,0 +1,5 @@
+see http://www.misanthropicgeek.net/?p=194
+
+sfx command line:
+
+"...\7-Zip\7z.exe" a -t7z somefile.exe somedir\ -sfx

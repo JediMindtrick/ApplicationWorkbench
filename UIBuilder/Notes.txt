@@ -1,0 +1,67 @@
+Grouping:
+0. How to group -> select many, then Ctrl+g
+
+1. How to ungroup -> select a group, then Ctrl+shift+g 
+
+2. Custom symbols should probably be preferred over grouping.  
+
+3. Grouping is not accounted for in the transform step (yet, and maybe never).  
+
+4. It appears that symbols inside a group may have x,y-origins relative to their containing group ()
+
+Navigation:
+1. right-click on a control to get an option to set a custom Id and custom data
+2. Ctrl+g to group controls
+3. to create a symbol ->
+	0. create an "assets" directory in the same directory as your mockup file
+	1. make sure your file has been saved
+	2. group some controls
+	3. right-click -> edit properties -> give the group a name (this is what will display in control browser)
+	4. save again (just for good measure, not sure it's necessary)
+	5. right-click -> edit properties -> "Convert to Symbol"
+	6. symbols are saved in symbols.bmml
+
+Exported xml:
+1. .bmml files are the same as exported xml!!
+
+2. width and height sometimes uses "w" and "h" attributes, but sometimes uses "measuredW" and "measuredH" attributes.  it seems that if using one set, the other is set to -1
+
+
+Custom symbols:
+Here is an example custom symbol:
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Component" x="463" y="75" w="198" h="77" measuredW="198" measuredH="77" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="1" x="7" y="7" w="-1" h="-1">
+          <text>Net%20Income%3A</text>
+        </override>
+        <override controlID="2" x="94" y="4" w="96" h="-1">
+          <text>NetINcome</text>
+        </override>
+        <override controlID="3" x="7" y="41" w="-1" h="-1">
+          <text>*NetIncome%20Error%20Message</text>
+        </override>
+        <override controlID="0" x="0" y="0" w="198" h="77">
+          <customData>some%2520custom%2520data</customData>
+        </override>
+        <override controlID="-1"/>
+        <src>./assets/TextInputSet.bmml#TextInputSet</src>
+      </controlProperties>
+    </control>
+
+0. have a controlTypeID of "com.balsamiq.mockups::Component"
+
+1. do not export labels,ids,text or other nodes contained in the symbol definition, but if you override them then the appropriate nodes are added
+
+2. containing controls seemed to be numbered by controlID, once set the controlID seems consistent for any given control (ex. the only input control would always show up as controlID="1" or whatever it is assigned).  this means the only way to tell which control is which is by figuring out what ID number got assigned to a given control and making the transform code account accordingly
+
+3. have a "type" that is set in the control's /controlProperties/src node
+custom symbols ex:
+      <controlProperties>
+        <src>./assets/lib1.bmml#Pulldown</src>
+      </controlProperties>
+
+4. can exist more than one in a given file.  this can be used to create libraries
+
+5. you can change the properties on an instance of a custom-symbol by double-clicking it and then double-clicking on whatever control you want to change
+
+5. you can edit a previously designed custom symbol by double-clicking it and then choosing the option to "edit source"

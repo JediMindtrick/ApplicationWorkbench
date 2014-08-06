@@ -1,0 +1,19 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="480" measuredH="105" mockupW="448" mockupH="84">
+  <controls>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Component" x="32" y="21" w="196" h="84" measuredW="196" measuredH="84" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="0" x="0" y="0" w="196" h="84"/>
+        <override controlID="1" x="86" y="15" w="102" h="27"/>
+        <override controlID="2" x="15" y="18" w="35" h="21"/>
+        <override controlID="3" x="15" y="57" w="153" h="21"/>
+        <override controlID="-1"/>
+        <src>./assets/symbols.bmml#Text Input Set</src>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Component" x="284" y="21" w="196" h="84" measuredW="196" measuredH="84" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/symbols.bmml#Date Input Set</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

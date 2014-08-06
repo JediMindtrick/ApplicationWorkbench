@@ -1,0 +1,36 @@
+input{
+	float:left;
+	margin-top: 20px;
+}
+
+#uiCode{
+	width: 95%;
+}
+
+#htmlOut{
+	width: 95%;
+}
+
+.activeEditor{
+	background-color: #FFFFA3;
+}
+
+
+.CodeMirror {
+  border: 1px solid #eee;
+/*  height: auto;*/
+}
+.CodeMirror-scroll {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.CodeMirror-focused{
+	background-color: #FFFFA3;	
+}
+
+.wrapCodeMirror{
+  width:98%;
+  height:98%;
+  border: thin solid black;
+}

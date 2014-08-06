@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Test Mustache</title>
+
+    <script type="text/javascript" src="./Scripts/Lib/require-2.1.2.js"></script>
+</head>
+
+<body>
+
+    <textarea id="output" style="width:95%; height:500px;"></textarea>
+
+    <script type="text/javascript">
+        CDNpath = 'http://credability-cdn.azurewebsites.net/js';
+
+        require.config({
+            baseUrl: "./Scripts",
+            waitSeconds: 0
+        });
+    </script>
+
+    <script type="text/javascript">  
+        require([
+            'Lib/jquery',
+            'Lib/mustache',
+            'TemplateLoader'
+        ], function ($,m,ensureTemplates) {
+            $(function(){                    
+
+                var vm = {
+                    useCases: [
+                        {
+                            id: 1,
+                            description: 'As a __ I want to do something funky.',
+                            csrChecked: false,
+                            counselorChecked: false,
+                            advisorChecked: 'checked="checked"',
+                            managerChecked: 'checked="checked"'
+                        },
+                        {
+                            id: 2,
+                            description: 'As a __ I want to do something serious.',
+                            csrChecked: 'checked="checked"',
+                            counselorChecked: 'checked="checked"',
+                            advisorChecked: 'checked="checked"',
+                            managerChecked: 'checked="checked"'
+                        }
+                    ]
+                };
+
+                ensureTemplates([
+                    {name:'testMustache',type:'mustache/html'}
+                    ],function(){
+
+                    var template = $('#testMustache').text();
+
+                    var out = m.render(template,vm);
+
+                    $('#output').val(out);
+                });
+            });
+        });
+
+    </script>
+
+<script id="testMustache" type="mustache/html">
+</script>
+
+</body>
+</html>

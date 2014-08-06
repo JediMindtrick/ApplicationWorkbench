@@ -1,0 +1,47 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="990" measuredH="735" mockupW="915" mockupH="707">
+  <controls>
+    <control controlID="10" controlTypeID="__group__" x="153" y="36" w="758" h="662" measuredW="758" measuredH="662" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::DataGrid" x="0" y="26" w="758" h="298" measuredW="772" measuredH="291" zOrder="0" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Corporate%20Data%20ID%5Cr%28CDI%29%2C%20Description%2C%20Invariants%2C%20Formula%0ANetIncome%2C%20How%20much%20money%20do%20you%20have%20after%20deductions%20like%20taxes%3F%2C%20isMoney%5Cr%3E%3D%200%2C%20Identity%0AHousing%2C%20How%20much%20money%20do%20you%20spend%20on%20housing%3F%2C%20isMoney%5Cr%3E%3D%200%2C%20Identity%0AInsurance%2C%20How%20much%20money%20do%20you%20spend%20on%20insurance%3F%2C%20isMoney%5Cr%3E%3D%200%2CIdentity%0ANetExpenses%2C%20How%20much%20are%20your%20total%20expenses%3F%2C%20isMoney%5Cr%3E%3D%200%5Cr%3C%20100%5C%2C000%2C%20Housing%20+%20Insurance%0ADisposableCash%2C%20How%20much%20money%20do%20you%20have%20left%20over%20after%20paying%20all%20expenses%3F%2C%20isMoney%5Cr%3E%3D%200%2CNetIncome%20-%20NetExpenses%0AFirstName%2C%20What%20is%20your%20first%20name%3F%2C%20isString%5Crlength%20%3E%200%5Crlength%20%3C%20100%2CIdentity%0AHousingSit%2C%20What%20is%20your%20housing%20situation%3F%2C%20-%2Cenum%5B%27Rent%27%5C%2C%27Own%27%5C%2C%27Other%27%5D</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="0" y="364" w="309" h="298" measuredW="308" measuredH="97" zOrder="1" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Corporate%20Data%20ID%5Cr%28CDI%29%2C%20System%20Name%2C%20System%20ID%0ANetIncome%2C%20HOST%2C%20screen%2017-5%0ANetIncome%2C%20Counsites%2C%20Net_Inc</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="440" y="364" w="-1" h="-1" measuredW="75" measuredH="27" zOrder="2" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>Budget%3A%20v1</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::List" x="440" y="406" w="100" h="93" measuredW="100" measuredH="126" zOrder="3" locked="false" isInGroup="10">
+          <controlProperties>
+            <text>NetIncome%0AHousing%0AInsurance%0ANetExpenses</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="214" y="0" w="330" h="26" measuredW="305" measuredH="33" zOrder="4" locked="false" isInGroup="10">
+          <controlProperties>
+            <size>24</size>
+            <text>Corporate%20Data%20ID%20Definition</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="24" y="337" w="260" h="27" measuredW="259" measuredH="33" zOrder="5" locked="false" isInGroup="10">
+          <controlProperties>
+            <size>24</size>
+            <text>Cross-Reference%20Table</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="440" y="337" w="260" h="27" measuredW="237" measuredH="33" zOrder="6" locked="false" isInGroup="10">
+          <controlProperties>
+            <size>24</size>
+            <text>Perspective%20Definition</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Canvas" x="75" y="28" w="915" h="707" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>

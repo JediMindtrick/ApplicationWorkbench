@@ -1,0 +1,86 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="669" measuredH="651" mockupW="349" mockupH="583">
+  <controls>
+    <control controlID="39" controlTypeID="__group__" x="320" y="68" w="349" h="583" measuredW="349" measuredH="583" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="349" h="583" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData/>
+            <customID>Column1</customID>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="17" y="157" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="1" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Monthly%20Income%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="185" w="96" h="-1" measuredW="51" measuredH="27" zOrder="2" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520NetInc</customData>
+            <customID>NetInc</customID>
+            <text>NetInc</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="17" y="87" w="-1" h="-1" measuredW="96" measuredH="21" zOrder="3" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Mortgage/Rent%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="115" w="-1" h="-1" measuredW="100" measuredH="27" zOrder="4" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520MortgRentExps</customData>
+            <customID>MortgRentExps</customID>
+            <text>MortgRentExps</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="17" y="227" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="5" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Entertainment%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="263" w="-1" h="-1" measuredW="94" measuredH="27" zOrder="6" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520Entertainment</customData>
+            <customID>Entertainment</customID>
+            <text>Entertainment</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="17" y="15" w="-1" h="-1" measuredW="83" measuredH="21" zOrder="7" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Credit%20Cards%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="45" w="-1" h="-1" measuredW="88" measuredH="27" zOrder="8" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520CCDebtBudg</customData>
+            <customID>CCDebtBudg</customID>
+            <text>CCDebtBudg</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="17" y="305" w="-1" h="-1" measuredW="105" measuredH="21" zOrder="9" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Health%20Insurance%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="341" w="-1" h="-1" measuredW="104" measuredH="27" zOrder="10" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520HealthInsurance</customData>
+            <customID>HealthInsurance</customID>
+            <text>HealthInsurance</text>
+          </controlProperties>
+        </control>
+        <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="17" y="383" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="11" locked="false" isInGroup="39">
+          <controlProperties>
+            <text>Electric</text>
+          </controlProperties>
+        </control>
+        <control controlID="12" controlTypeID="com.balsamiq.mockups::TextInput" x="17" y="419" w="-1" h="-1" measuredW="55" measuredH="27" zOrder="12" locked="false" isInGroup="39">
+          <controlProperties>
+            <customData>value%253A%2520Utilities</customData>
+            <customID>Utilities</customID>
+            <text>Utilities</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>

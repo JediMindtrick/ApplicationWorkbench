@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <img style="margin-left: auto; margin-right:auto;" src="{{componentName}}"></img>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:54px;">ID</th>
+                    <th style="width:698px;">Description</th>
+                    <th class="header_rotate" style="width:54px;">CSR</th>
+                    <th class="header_rotate" style="width:54px;">Counselor</th>
+                    <th class="header_rotate" style="width:54px;">Advisor</th>
+                    <th class="header_rotate" style="width:54px;">Manager</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#useCases}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{description}}</td>
+                    <td><input name="csr" type="checkbox" {{{csrChecked}}}></td>
+                    <td><input name="counselor" type="checkbox" {{{counselorChecked}}}></td>
+                    <td><input name="advisor" type="checkbox" {{{advisorChecked}}}></td>
+                    <td><input name="manager" type="checkbox" {{{managerChecked}}}></td>
+                </tr>
+                {{/useCases}}
+            </tbody>
+        </table>
+    </body>
+</html>

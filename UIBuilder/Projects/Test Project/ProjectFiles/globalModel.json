@@ -1,0 +1,994 @@
+{
+    "My Example Plugin": {
+        "ui": {
+            "html": "<div id=\"\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"CCDebtBudg\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"NetInc\"></div>"
+        },
+        "nodes": [
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Plugin Container",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 15,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 384,
+                            "y": 9
+                        },
+                        "ur": {
+                            "x": 724,
+                            "y": 9
+                        },
+                        "bl": {
+                            "x": 384,
+                            "y": 252
+                        },
+                        "br": {
+                            "x": 724,
+                            "y": 252
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 15,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "CCDebtBudg"
+                },
+                "globalID": 16,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 54
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 54
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 138
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 138
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 16,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for CCDebtBudg",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                            "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                            "ID": 16
+                        },
+                        {
+                            "text": "CCDebtBudg should be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                            "ID": 16
+                        },
+                        {
+                            "text": "CCDebtBudg should not be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                            "ID": 16
+                        }
+                    ]
+                }
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "NetInc"
+                },
+                "globalID": 17,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 153
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 153
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 237
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 237
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 17,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for NetInc",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                            "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                            "ID": 17
+                        },
+                        {
+                            "text": "NetInc should be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                            "targetRegex": "NetInc should be '(\\S+)'",
+                            "ID": 17
+                        },
+                        {
+                            "text": "NetInc should not be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                            "targetRegex": "NetInc should not be '(\\S+)'",
+                            "ID": 17
+                        }
+                    ]
+                }
+            }
+        ],
+        "test": {
+            "sentences": [
+                {
+                    "text": "I enter a value of param1 for CCDebtBudg",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                    "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                    "ID": 16
+                },
+                {
+                    "text": "CCDebtBudg should be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                    "ID": 16
+                },
+                {
+                    "text": "CCDebtBudg should not be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                    "ID": 16
+                },
+                {
+                    "text": "I enter a value of param1 for NetInc",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                    "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                    "ID": 17
+                },
+                {
+                    "text": "NetInc should be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                    "targetRegex": "NetInc should be '(\\S+)'",
+                    "ID": 17
+                },
+                {
+                    "text": "NetInc should not be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                    "targetRegex": "NetInc should not be '(\\S+)'",
+                    "ID": 17
+                }
+            ]
+        },
+        "source": {
+            "balsamiq": "<mockup version=\"1.0\" skin=\"sketch\" fontFace=\"Balsamiq Sans\" measuredW=\"724\" measuredH=\"252\" mockupW=\"340\" mockupH=\"243\">\n  <controls>\n    <control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n  </controls>\n</mockup>",
+            "balsamiqName": "My Example Plugin"
+        },
+        "use-cases": [
+            {
+                "ID": 1,
+                "Description": "As a __ I want to do something funky.",
+                "CSR": false,
+                "Counselor": false,
+                "Advisor": true,
+                "Manager": true
+            },
+            {
+                "ID": 2,
+                "Description": "As a __ I want to do something serious.",
+                "CSR": true,
+                "Counselor": true,
+                "Advisor": true,
+                "Manager": true
+            },
+            {
+                "ID": 3,
+                "Description": "As a __ I want to show this working.",
+                "CSR": false,
+                "Counselor": true,
+                "Advisor": false,
+                "Manager": false
+            }
+        ]
+    },
+    "currentModule": "My Example Plugin",
+    "My Example Plugin 2": {
+        "ui": {
+            "html": "<div style=\"width: 400px;\" id=\"Column1\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Credit Cards:</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"CCDebtBudg\" data-bind=\"value: CCDebtBudg\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Mortgage/Rent:</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"MortgRentExps\" data-bind=\"value: MortgRentExps\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Monthly Income:</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"NetInc\" data-bind=\"value: NetInc\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Entertainment:</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"Entertainment\" data-bind=\"value: Entertainment\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Health Insurance:</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"HealthInsurance\" data-bind=\"value: HealthInsurance\"><label style=\"margin-top: 20px; float:left;\" class=\"small\" id=\"\">Electric</label><input style=\"float:right; text-align:right;\" type=\"text\" id=\"Utilities\" data-bind=\"value: Utilities\"></div>"
+        },
+        "nodes": [
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"39\" controlTypeID=\"__group__\" x=\"320\" y=\"68\" w=\"349\" h=\"583\" measuredW=\"349\" measuredH=\"583\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <groupChildrenDescriptors>\n        <control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Canvas\" x=\"0\" y=\"0\" w=\"349\" h=\"583\" measuredW=\"100\" measuredH=\"70\" zOrder=\"0\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData/>\n            <customID>Column1</customID>\n          </controlProperties>\n        </control>\n        <control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"157\" w=\"-1\" h=\"-1\" measuredW=\"97\" measuredH=\"21\" zOrder=\"1\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Monthly%20Income%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"185\" w=\"96\" h=\"-1\" measuredW=\"51\" measuredH=\"27\" zOrder=\"2\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520NetInc</customData>\n            <customID>NetInc</customID>\n            <text>NetInc</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"3\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"87\" w=\"-1\" h=\"-1\" measuredW=\"96\" measuredH=\"21\" zOrder=\"3\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Mortgage/Rent%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"4\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"115\" w=\"-1\" h=\"-1\" measuredW=\"100\" measuredH=\"27\" zOrder=\"4\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520MortgRentExps</customData>\n            <customID>MortgRentExps</customID>\n            <text>MortgRentExps</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"5\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"227\" w=\"-1\" h=\"-1\" measuredW=\"90\" measuredH=\"21\" zOrder=\"5\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Entertainment%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"6\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"263\" w=\"-1\" h=\"-1\" measuredW=\"94\" measuredH=\"27\" zOrder=\"6\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Entertainment</customData>\n            <customID>Entertainment</customID>\n            <text>Entertainment</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"7\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"15\" w=\"-1\" h=\"-1\" measuredW=\"83\" measuredH=\"21\" zOrder=\"7\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Credit%20Cards%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"8\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"45\" w=\"-1\" h=\"-1\" measuredW=\"88\" measuredH=\"27\" zOrder=\"8\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520CCDebtBudg</customData>\n            <customID>CCDebtBudg</customID>\n            <text>CCDebtBudg</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"9\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"305\" w=\"-1\" h=\"-1\" measuredW=\"105\" measuredH=\"21\" zOrder=\"9\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Health%20Insurance%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"10\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"341\" w=\"-1\" h=\"-1\" measuredW=\"104\" measuredH=\"27\" zOrder=\"10\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520HealthInsurance</customData>\n            <customID>HealthInsurance</customID>\n            <text>HealthInsurance</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"11\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"383\" w=\"-1\" h=\"-1\" measuredW=\"49\" measuredH=\"21\" zOrder=\"11\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Electric</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"12\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"419\" w=\"-1\" h=\"-1\" measuredW=\"55\" measuredH=\"27\" zOrder=\"12\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Utilities</customData>\n            <customID>Utilities</customID>\n            <text>Utilities</text>\n          </controlProperties>\n        </control>\n      </groupChildrenDescriptors>\n    </control>",
+                    "controlTypeID": "__group__",
+                    "src": "",
+                    "customData": "value: NetIncvalue: MortgRentExpsvalue: Entertainmentvalue: CCDebtBudgvalue: HealthInsurancevalue: Utilities",
+                    "customID": "Column1NetIncMortgRentExpsEntertainmentCCDebtBudgHealthInsuranceUtilities"
+                },
+                "globalID": 1,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 320,
+                            "y": 68
+                        },
+                        "ur": {
+                            "x": 669,
+                            "y": 68
+                        },
+                        "bl": {
+                            "x": 320,
+                            "y": 651
+                        },
+                        "br": {
+                            "x": 669,
+                            "y": 651
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 1,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Canvas\" x=\"0\" y=\"0\" w=\"349\" h=\"583\" measuredW=\"100\" measuredH=\"70\" zOrder=\"0\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData/>\n            <customID>Column1</customID>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Canvas",
+                    "src": "",
+                    "customData": "",
+                    "customID": "Column1"
+                },
+                "globalID": 2,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "ur": {
+                            "x": 349,
+                            "y": 0
+                        },
+                        "bl": {
+                            "x": 0,
+                            "y": 583
+                        },
+                        "br": {
+                            "x": 349,
+                            "y": 583
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 2,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"157\" w=\"-1\" h=\"-1\" measuredW=\"97\" measuredH=\"21\" zOrder=\"1\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Monthly%20Income%3A</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 3,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 157
+                        },
+                        "ur": {
+                            "x": 114,
+                            "y": 157
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 178
+                        },
+                        "br": {
+                            "x": 114,
+                            "y": 178
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 3,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"185\" w=\"96\" h=\"-1\" measuredW=\"51\" measuredH=\"27\" zOrder=\"2\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520NetInc</customData>\n            <customID>NetInc</customID>\n            <text>NetInc</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: NetInc",
+                    "customID": "NetInc"
+                },
+                "globalID": 4,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 185
+                        },
+                        "ur": {
+                            "x": 113,
+                            "y": 185
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 212
+                        },
+                        "br": {
+                            "x": 113,
+                            "y": 212
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 4,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"3\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"87\" w=\"-1\" h=\"-1\" measuredW=\"96\" measuredH=\"21\" zOrder=\"3\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Mortgage/Rent%3A</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 5,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 87
+                        },
+                        "ur": {
+                            "x": 113,
+                            "y": 87
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 108
+                        },
+                        "br": {
+                            "x": 113,
+                            "y": 108
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 5,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"4\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"115\" w=\"-1\" h=\"-1\" measuredW=\"100\" measuredH=\"27\" zOrder=\"4\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520MortgRentExps</customData>\n            <customID>MortgRentExps</customID>\n            <text>MortgRentExps</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: MortgRentExps",
+                    "customID": "MortgRentExps"
+                },
+                "globalID": 6,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 115
+                        },
+                        "ur": {
+                            "x": 117,
+                            "y": 115
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 142
+                        },
+                        "br": {
+                            "x": 117,
+                            "y": 142
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 6,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"5\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"227\" w=\"-1\" h=\"-1\" measuredW=\"90\" measuredH=\"21\" zOrder=\"5\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Entertainment%3A</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 7,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 227
+                        },
+                        "ur": {
+                            "x": 107,
+                            "y": 227
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 248
+                        },
+                        "br": {
+                            "x": 107,
+                            "y": 248
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 7,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"6\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"263\" w=\"-1\" h=\"-1\" measuredW=\"94\" measuredH=\"27\" zOrder=\"6\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Entertainment</customData>\n            <customID>Entertainment</customID>\n            <text>Entertainment</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: Entertainment",
+                    "customID": "Entertainment"
+                },
+                "globalID": 8,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 263
+                        },
+                        "ur": {
+                            "x": 111,
+                            "y": 263
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 290
+                        },
+                        "br": {
+                            "x": 111,
+                            "y": 290
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 8,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"7\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"15\" w=\"-1\" h=\"-1\" measuredW=\"83\" measuredH=\"21\" zOrder=\"7\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Credit%20Cards%3A</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 9,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 15
+                        },
+                        "ur": {
+                            "x": 100,
+                            "y": 15
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 36
+                        },
+                        "br": {
+                            "x": 100,
+                            "y": 36
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 9,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"8\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"45\" w=\"-1\" h=\"-1\" measuredW=\"88\" measuredH=\"27\" zOrder=\"8\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520CCDebtBudg</customData>\n            <customID>CCDebtBudg</customID>\n            <text>CCDebtBudg</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: CCDebtBudg",
+                    "customID": "CCDebtBudg"
+                },
+                "globalID": 10,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 45
+                        },
+                        "ur": {
+                            "x": 105,
+                            "y": 45
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 72
+                        },
+                        "br": {
+                            "x": 105,
+                            "y": 72
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 10,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"9\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"305\" w=\"-1\" h=\"-1\" measuredW=\"105\" measuredH=\"21\" zOrder=\"9\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Health%20Insurance%3A</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 11,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 305
+                        },
+                        "ur": {
+                            "x": 122,
+                            "y": 305
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 326
+                        },
+                        "br": {
+                            "x": 122,
+                            "y": 326
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 11,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"10\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"341\" w=\"-1\" h=\"-1\" measuredW=\"104\" measuredH=\"27\" zOrder=\"10\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520HealthInsurance</customData>\n            <customID>HealthInsurance</customID>\n            <text>HealthInsurance</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: HealthInsurance",
+                    "customID": "HealthInsurance"
+                },
+                "globalID": 12,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 341
+                        },
+                        "ur": {
+                            "x": 121,
+                            "y": 341
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 368
+                        },
+                        "br": {
+                            "x": 121,
+                            "y": 368
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 12,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"11\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"383\" w=\"-1\" h=\"-1\" measuredW=\"49\" measuredH=\"21\" zOrder=\"11\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Electric</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Label",
+                    "src": "",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 13,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 383
+                        },
+                        "ur": {
+                            "x": 66,
+                            "y": 383
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 404
+                        },
+                        "br": {
+                            "x": 66,
+                            "y": 404
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 13,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"12\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"419\" w=\"-1\" h=\"-1\" measuredW=\"55\" measuredH=\"27\" zOrder=\"12\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Utilities</customData>\n            <customID>Utilities</customID>\n            <text>Utilities</text>\n          </controlProperties>\n        </control>",
+                    "controlTypeID": "com.balsamiq.mockups::TextInput",
+                    "src": "",
+                    "customData": "value: Utilities",
+                    "customID": "Utilities"
+                },
+                "globalID": 14,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 17,
+                            "y": 419
+                        },
+                        "ur": {
+                            "x": 72,
+                            "y": 419
+                        },
+                        "bl": {
+                            "x": 17,
+                            "y": 446
+                        },
+                        "br": {
+                            "x": 72,
+                            "y": 446
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 14,
+                    "parent": null
+                },
+                "test": {}
+            }
+        ],
+        "test": {
+            "sentences": []
+        },
+        "source": {
+            "balsamiq": "<mockup version=\"1.0\" skin=\"sketch\" fontFace=\"Balsamiq Sans\" measuredW=\"669\" measuredH=\"651\" mockupW=\"349\" mockupH=\"583\">\n  <controls>\n    <control controlID=\"39\" controlTypeID=\"__group__\" x=\"320\" y=\"68\" w=\"349\" h=\"583\" measuredW=\"349\" measuredH=\"583\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <groupChildrenDescriptors>\n        <control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Canvas\" x=\"0\" y=\"0\" w=\"349\" h=\"583\" measuredW=\"100\" measuredH=\"70\" zOrder=\"0\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData/>\n            <customID>Column1</customID>\n          </controlProperties>\n        </control>\n        <control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"157\" w=\"-1\" h=\"-1\" measuredW=\"97\" measuredH=\"21\" zOrder=\"1\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Monthly%20Income%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"185\" w=\"96\" h=\"-1\" measuredW=\"51\" measuredH=\"27\" zOrder=\"2\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520NetInc</customData>\n            <customID>NetInc</customID>\n            <text>NetInc</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"3\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"87\" w=\"-1\" h=\"-1\" measuredW=\"96\" measuredH=\"21\" zOrder=\"3\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Mortgage/Rent%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"4\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"115\" w=\"-1\" h=\"-1\" measuredW=\"100\" measuredH=\"27\" zOrder=\"4\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520MortgRentExps</customData>\n            <customID>MortgRentExps</customID>\n            <text>MortgRentExps</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"5\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"227\" w=\"-1\" h=\"-1\" measuredW=\"90\" measuredH=\"21\" zOrder=\"5\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Entertainment%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"6\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"263\" w=\"-1\" h=\"-1\" measuredW=\"94\" measuredH=\"27\" zOrder=\"6\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Entertainment</customData>\n            <customID>Entertainment</customID>\n            <text>Entertainment</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"7\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"15\" w=\"-1\" h=\"-1\" measuredW=\"83\" measuredH=\"21\" zOrder=\"7\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Credit%20Cards%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"8\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"45\" w=\"-1\" h=\"-1\" measuredW=\"88\" measuredH=\"27\" zOrder=\"8\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520CCDebtBudg</customData>\n            <customID>CCDebtBudg</customID>\n            <text>CCDebtBudg</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"9\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"305\" w=\"-1\" h=\"-1\" measuredW=\"105\" measuredH=\"21\" zOrder=\"9\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Health%20Insurance%3A</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"10\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"341\" w=\"-1\" h=\"-1\" measuredW=\"104\" measuredH=\"27\" zOrder=\"10\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520HealthInsurance</customData>\n            <customID>HealthInsurance</customID>\n            <text>HealthInsurance</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"11\" controlTypeID=\"com.balsamiq.mockups::Label\" x=\"17\" y=\"383\" w=\"-1\" h=\"-1\" measuredW=\"49\" measuredH=\"21\" zOrder=\"11\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <text>Electric</text>\n          </controlProperties>\n        </control>\n        <control controlID=\"12\" controlTypeID=\"com.balsamiq.mockups::TextInput\" x=\"17\" y=\"419\" w=\"-1\" h=\"-1\" measuredW=\"55\" measuredH=\"27\" zOrder=\"12\" locked=\"false\" isInGroup=\"39\">\n          <controlProperties>\n            <customData>value%253A%2520Utilities</customData>\n            <customID>Utilities</customID>\n            <text>Utilities</text>\n          </controlProperties>\n        </control>\n      </groupChildrenDescriptors>\n    </control>\n  </controls>\n</mockup>",
+            "balsamiqName": "My Example Plugin 2"
+        }
+    },
+    "Something Different": {
+        "ui": {
+            "html": "<div id=\"\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"CCDebtBudg\"><input style=\"float:right; text-align:right;\" type=\"text\" id=\"NetInc\"></div>"
+        },
+        "nodes": [
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Plugin Container",
+                    "customData": "",
+                    "customID": ""
+                },
+                "globalID": 21,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 384,
+                            "y": 9
+                        },
+                        "ur": {
+                            "x": 724,
+                            "y": 9
+                        },
+                        "bl": {
+                            "x": 384,
+                            "y": 252
+                        },
+                        "br": {
+                            "x": 724,
+                            "y": 252
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 21,
+                    "parent": null
+                },
+                "test": {}
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "CCDebtBudg"
+                },
+                "globalID": 22,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 54
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 54
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 138
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 138
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 22,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for CCDebtBudg",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                            "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                            "ID": 22
+                        },
+                        {
+                            "text": "CCDebtBudg should be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                            "ID": 22
+                        },
+                        {
+                            "text": "CCDebtBudg should not be param1",
+                            "selector": "#CCDebtBudg",
+                            "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                            "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                            "ID": 22
+                        }
+                    ]
+                }
+            },
+            {
+                "balsamiq": {
+                    "raw": "<control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>",
+                    "controlTypeID": "com.balsamiq.mockups::Component",
+                    "src": "./assets/symbols.bmml#Text Input Set",
+                    "customData": "",
+                    "customID": "NetInc"
+                },
+                "globalID": 23,
+                "ui": {
+                    "rectangleLayout": {
+                        "ul": {
+                            "x": 403,
+                            "y": 153
+                        },
+                        "ur": {
+                            "x": 716,
+                            "y": 153
+                        },
+                        "bl": {
+                            "x": 403,
+                            "y": 237
+                        },
+                        "br": {
+                            "x": 716,
+                            "y": 237
+                        }
+                    }
+                },
+                "refs": {
+                    "self": 23,
+                    "parent": null
+                },
+                "test": {
+                    "sentences": [
+                        {
+                            "text": "I enter a value of param1 for NetInc",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                            "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                            "ID": 23
+                        },
+                        {
+                            "text": "NetInc should be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                            "targetRegex": "NetInc should be '(\\S+)'",
+                            "ID": 23
+                        },
+                        {
+                            "text": "NetInc should not be param1",
+                            "selector": "#NetInc",
+                            "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                            "targetRegex": "NetInc should not be '(\\S+)'",
+                            "ID": 23
+                        }
+                    ]
+                }
+            }
+        ],
+        "test": {
+            "sentences": [
+                {
+                    "text": "I enter a value of param1 for CCDebtBudg",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for CCDebtBudg",
+                    "targetRegex": "I enter a value of '(\\S+)' for CCDebtBudg",
+                    "ID": 22
+                },
+                {
+                    "text": "CCDebtBudg should be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should be '(\\S+)'",
+                    "ID": 22
+                },
+                {
+                    "text": "CCDebtBudg should not be param1",
+                    "selector": "#CCDebtBudg",
+                    "dslRegex": "(given|when|then|and|but|or) CCDebtBudg should not be \"(\\S+)\"",
+                    "targetRegex": "CCDebtBudg should not be '(\\S+)'",
+                    "ID": 22
+                },
+                {
+                    "text": "I enter a value of param1 for NetInc",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) I enter a value of (\\S+) for NetInc",
+                    "targetRegex": "I enter a value of '(\\S+)' for NetInc",
+                    "ID": 23
+                },
+                {
+                    "text": "NetInc should be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should be \"(\\S+)\"",
+                    "targetRegex": "NetInc should be '(\\S+)'",
+                    "ID": 23
+                },
+                {
+                    "text": "NetInc should not be param1",
+                    "selector": "#NetInc",
+                    "dslRegex": "(given|when|then|and|but|or) NetInc should not be \"(\\S+)\"",
+                    "targetRegex": "NetInc should not be '(\\S+)'",
+                    "ID": 23
+                }
+            ]
+        },
+        "source": {
+            "balsamiq": "<mockup version=\"1.0\" skin=\"sketch\" fontFace=\"Balsamiq Sans\" measuredW=\"724\" measuredH=\"252\" mockupW=\"340\" mockupH=\"243\">\n  <controls>\n    <control controlID=\"0\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"384\" y=\"9\" w=\"340\" h=\"243\" measuredW=\"340\" measuredH=\"243\" zOrder=\"0\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"15\" w=\"340\" h=\"228\"/>\n        <override controlID=\"1\" x=\"112\" y=\"0\" w=\"116\" h=\"27\">\n          <text>Plugin%20Container</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <override controlID=\"0:0\" x=\"0\" y=\"0\" w=\"340\" h=\"228\"/>\n        <src>./assets/symbols.bmml#Plugin%20Container</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"1\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"54\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"1\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"179\" y=\"15\" w=\"124\" h=\"27\">\n          <text>CCDebtBudg</text>\n        </override>\n        <override controlID=\"2\" x=\"18\" y=\"18\" w=\"96\" h=\"21\">\n          <text>Credit%20Cards%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"18\" y=\"57\" w=\"275\" h=\"21\">\n          <text>*Please%20enter%20a%20value%20for%20credit%20cards.</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n    <control controlID=\"2\" controlTypeID=\"com.balsamiq.mockups::Component\" x=\"403\" y=\"153\" w=\"313\" h=\"84\" measuredW=\"313\" measuredH=\"84\" zOrder=\"2\" locked=\"false\" isInGroup=\"-1\">\n      <controlProperties>\n        <override controlID=\"0\" x=\"0\" y=\"0\" w=\"313\" h=\"84\"/>\n        <override controlID=\"1\" x=\"196\" y=\"15\" w=\"102\" h=\"-1\">\n          <text>NetInc</text>\n        </override>\n        <override controlID=\"2\" x=\"15\" y=\"18\" w=\"-1\" h=\"-1\">\n          <text>Monthly%20Net%20Income%3A</text>\n        </override>\n        <override controlID=\"3\" x=\"8\" y=\"48\" w=\"-1\" h=\"-1\">\n          <text>*Please%20enter%20a%20value%20for%20monthly%20%22take-home%22%20pay</text>\n        </override>\n        <override controlID=\"-1\"/>\n        <src>./assets/symbols.bmml#Text%20Input%20Set</src>\n      </controlProperties>\n    </control>\n  </controls>\n</mockup>",
+            "balsamiqName": "Something Different"
+        },
+        "use-cases": [
+            {
+                "ID": 1,
+                "Description": "As a __ I think this is awesome!",
+                "CSR": false,
+                "Counselor": false,
+                "Advisor": true,
+                "Manager": false
+            }
+        ]
+    },
+    "No Wireframe Module": {
+        "ui": {
+            "html": ""
+        },
+        "nodes": [],
+        "test": {
+            "sentences": []
+        },
+        "source": {
+            "balsamiq": "",
+            "balsamiqName": "No Wireframe Module"
+        },
+        "use-cases": [
+            {
+                "ID": 1,
+                "Description": "As a Business Analyst I want to define some functionality that does not require a UI.",
+                "CSR": false,
+                "Counselor": false,
+                "Advisor": false,
+                "Manager": true
+            },
+            {
+                "ID": 2,
+                "Description": "As a developer I want to make sure that the templated use-case functionality is working correctly.",
+                "CSR": false,
+                "Counselor": false,
+                "Advisor": true,
+                "Manager": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="673" measuredH="207" mockupW="198" mockupH="77">
+  <controls>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Component" x="475" y="130" w="198" h="77" measuredW="198" measuredH="77" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="1" x="7" y="7" w="-1" h="-1">
+          <text>Net%20Income%3A</text>
+        </override>
+        <override controlID="2" x="94" y="4" w="96" h="-1">
+          <text>NetINcome</text>
+        </override>
+        <override controlID="3" x="7" y="41" w="-1" h="-1">
+          <text>*NetIncome%20Error%20Message</text>
+        </override>
+        <override controlID="0" x="0" y="0" w="198" h="77">
+          <customData>some%2520custom%2520data</customData>
+        </override>
+        <src>./assets/TextInputSet.bmml#TextInputSet</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
